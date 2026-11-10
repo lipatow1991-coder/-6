@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI MUSIC KREW | Hub</title>
-    <!-- Подключаем скрипт Telegram Mini Apps -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
@@ -22,6 +21,7 @@
             margin-top: 30px;
             font-size: 2rem;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
         .subtitle {
             color: #888;
@@ -41,92 +41,158 @@
         .card h3 {
             margin: 0 0 10px 0;
             color: #d4b470;
-        }
-        .card p {
-            margin: 0;
-            font-size: 0.9rem;
-            color: #ccc;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
         }
         .member-list {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* В два столбца для компактности */
+            gap: 10px;
         }
-        .member-list li {
-            padding: 8px 0;
-            border-bottom: 1px solid #222;
+        .member-item {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #222;
+            font-size: 0.9rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
-        .member-list li:last-child {
-            border-bottom: none;
+        .member-item strong {
+            color: #fff;
+            margin-bottom: 5px;
+            word-break: break-all; /* Чтобы длинные ники не вылезали */
         }
-        .member-list a {
-            color: #ff3333;
-            text-decoration: none;
+        .role-icon {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
         }
         .btn {
             display: block;
             background-color: #ff0000;
             color: #000;
             text-decoration: none;
-            padding: 12px;
+            padding: 15px;
             border-radius: 8px;
             font-weight: bold;
             margin-top: 20px;
             box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
             transition: 0.3s;
+            font-size: 1.1rem;
         }
         .btn:hover {
             background-color: #fff;
             box-shadow: 0 0 20px #fff;
-        }
-        .btn-audio {
-            background-color: transparent;
-            color: #ff0000;
-            border: 1px solid #ff0000;
-            box-shadow: none;
-        }
-        .btn-audio:hover {
-            background-color: #ff0000;
-            color: #000;
         }
     </style>
 </head>
 <body>
 
     <h1>AI MUSIC KREW</h1>
-    <div class="subtitle">ДУРДОМ ПАЛАТА 6</div>
+    <div class="subtitle">Гильдия ИИ-композиторов</div>
 
-    <!-- Блок описания сообщества -->
     <div class="card">
-        <h3>🦇 О нас</h3>
-        <p>ОТКРЫТЫЙ КУЛЬТ ТВОРЧЕСКИХ ЛЮДЕЙ.Здесь каждый агнец творит свою тьму.</p>
+        <h3>🦇 Манифест</h3>
+        <p style="font-size: 0.9rem; color: #ccc; margin: 0;">Мы — независимые творцы, использующие силу искусственного интеллекта для создания тяжелой, атмосферной и темной музыки. Здесь каждый — творец.</p>
     </div>
 
-    <!-- Список участников -->
+    <!-- БЛОК УЧАСТНИКОВ -->
     <div class="card">
-        <h3>🤝 Наши резиденты</h3>
-        <ul class="member-list">
-            <li><strong>NOTES ISKAREOTUS</strong> — <a href="https://lipatow1991-coder.github.io/notes-iskareotus-/" target="_blank">Слушать</a></li>
-            <li><strong>Имя Участника 2</strong> — <a href="#" target="_blank">Слушать</a></li>
-            <li><strong>Имя Участника 3</strong> — <a href="#" target="_blank">Слушать</a></li>
-            <li><strong>Имя Участника 4</strong> — <a href="#" target="_blank">Слушать</a></li>
-        </ul>
+        <h3>🎸 Резиденты</h3>
+        <div class="member-list">
+            <!-- Владелец (Вы) -->
+            <div class="member-item">
+                <div class="role-icon">👑</div>
+                <strong>wechernihuter</strong>
+                <!-- Замените ссылку, если у вас есть другая -->
+                <a href="https://lipatow1991-coder.github.io/notes-iskareotus-/" style="color:#ff3333; font-size:0.8rem; text-decoration:none;">Мой проект</a>
+            </div>
+            
+            <!-- Админы -->
+            <div class="member-item">
+                <div class="role-icon">🛡️</div>
+                <strong>Татьяна Корбут</strong>
+            </div>
+            <div class="member-item">
+                <div class="role-icon">🛡️</div>
+                <strong>Viktor</strong>
+            </div>
+
+            <!-- Остальные музыканты (добавляйте сюда) -->
+            <div class="member-item">
+                <strong>Стас Лис</strong>
+            </div>
+            <div class="member-item">
+                <strong>Иван Смирнов</strong>
+            </div>
+            <div class="member-item">
+                <strong>РАДИОКТИВНО</strong>
+            </div>
+            <div class="member-item">
+                <strong>QueenFire/ГолосОК</strong>
+            </div>
+            <div class="member-item">
+                <strong>Виктория</strong>
+            </div>
+            <div class="member-item">
+                <strong>Оксана Шугаринг</strong>
+            </div>
+            <div class="member-item">
+                <strong>MebelGrifon</strong>
+            </div>
+            <div class="member-item">
+                <strong>Lady Boss</strong>
+            </div>
+            <div class="member-item">
+                <strong>Вероника Перс</strong>
+            </div>
+            <div class="member-item">
+                <strong>?!</strong>
+            </div>
+            <div class="member-item">
+                <strong>Александр Alex</strong>
+            </div>
+            <div class="member-item">
+                <strong>Игорь Семченко</strong>
+            </div>
+            <div class="member-item">
+                <strong>Денис Абрамовских</strong>
+            </div>
+            <div class="member-item">
+                <strong>Veronika</strong>
+            </div>
+            <div class="member-item">
+                <strong>Мечеславский</strong>
+            </div>
+            <div class="member-item">
+                <strong>Vladimir A</strong>
+            </div>
+            <div class="member-item">
+                <strong>† Завет †</strong>
+            </div>
+            <div class="member-item">
+                <strong>NERAON</strong>
+            </div>
+            <div class="member-item">
+                <strong>MDH</strong>
+            </div>
+            <div class="member-item">
+                <strong>Юлия</strong>
+            </div>
+            <div class="member-item">
+                <strong>Andre (V)</strong>
+            </div>
+        </div>
     </div>
 
-    <!-- Блок новостей -->
-    <div class="card">
-        <h3>📜 Сводка</h3>
-        <p>Работаем над совместным фит-проектом. Следите за новостями в нашем основном чате.</p>
-    </div>
-
-    <!-- Кнопки действий -->
-    <a href="https://t.me/Wechernihuter" target="_blank" class="btn">💬 Войти в наш чат</a>
-    
-    <!-- Если у вас есть общий канал, добавьте ссылку сюда -->
-    <a href="#" target="_blank" class="btn btn-audio">📢 Наш канал (скоро)</a>
+    <a href="https://t.me/+oiomDYa-RodmOGEy" target="_blank" class="btn">💬 Войти в наш чат</a>
 
     <script>
-        // Инициализация Telegram Web App
         let tg = window.Telegram.WebApp;
         tg.expand(); 
         tg.setHeaderColor('#050505'); 
