@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI MUSIC KREW | Hub</title>
+    <!-- Подключаем скрипт Telegram Mini Apps -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #050505;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Times New Roman', serif;
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+            margin-top: 30px;
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #d4b470;
+        }
+        .card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        .member-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .member-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #222;
+        }
+        .member-list li:last-child {
+            border-bottom: none;
+        }
+        .member-list a {
+            color: #ff3333;
+            text-decoration: none;
+        }
+        .btn {
+            display: block;
+            background-color: #ff0000;
+            color: #000;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #fff;
+            box-shadow: 0 0 20px #fff;
+        }
+        .btn-audio {
+            background-color: transparent;
+            color: #ff0000;
+            border: 1px solid #ff0000;
+            box-shadow: none;
+        }
+        .btn-audio:hover {
+            background-color: #ff0000;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>AI MUSIC KREW</h1>
+    <div class="subtitle">ДУРДОМ ПАЛАТА 6</div>
+
+    <!-- Блок описания сообщества -->
+    <div class="card">
+        <h3>🦇 О нас</h3>
+        <p>ОТКРЫТЫЙ КУЛЬТ ТВОРЧЕСКИХ ЛЮДЕЙ.Здесь каждый агнец творит свою тьму.</p>
+    </div>
+
+    <!-- Список участников -->
+    <div class="card">
+        <h3>🤝 Наши резиденты</h3>
+        <ul class="member-list">
+            <li><strong>NOTES ISKAREOTUS</strong> — <a href="https://lipatow1991-coder.github.io/notes-iskareotus-/" target="_blank">Слушать</a></li>
+            <li><strong>Имя Участника 2</strong> — <a href="#" target="_blank">Слушать</a></li>
+            <li><strong>Имя Участника 3</strong> — <a href="#" target="_blank">Слушать</a></li>
+            <li><strong>Имя Участника 4</strong> — <a href="#" target="_blank">Слушать</a></li>
+        </ul>
+    </div>
+
+    <!-- Блок новостей -->
+    <div class="card">
+        <h3>📜 Сводка</h3>
+        <p>Работаем над совместным фит-проектом. Следите за новостями в нашем основном чате.</p>
+    </div>
+
+    <!-- Кнопки действий -->
+    <a href="https://t.me/Wechernihuter" target="_blank" class="btn">💬 Войти в наш чат</a>
+    
+    <!-- Если у вас есть общий канал, добавьте ссылку сюда -->
+    <a href="#" target="_blank" class="btn btn-audio">📢 Наш канал (скоро)</a>
+
+    <script>
+        // Инициализация Telegram Web App
+        let tg = window.Telegram.WebApp;
+        tg.expand(); 
+        tg.setHeaderColor('#050505'); 
+        tg.setBackgroundColor('#050505'); 
+    </script>
+</body>
+</html>
